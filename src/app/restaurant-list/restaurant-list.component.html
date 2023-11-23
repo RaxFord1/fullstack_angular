@@ -1,0 +1,11 @@
+{{ 'WELCOME' | translate }}
+<div
+  class="restaurant-item"
+  *ngFor="let restaurant of restaurants"
+  (click)="selectRestaurant(restaurant)"
+>
+  {{ restaurant.name }}
+</div>
+<app-restaraunt-details
+  [restaurant]="selectedRestaurant"
+></app-restaraunt-details>

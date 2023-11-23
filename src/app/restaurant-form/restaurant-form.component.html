@@ -1,0 +1,48 @@
+<form [formGroup]="restaurantForm" (ngSubmit)="onSubmit()">
+  <div>
+    <label for="name">{{ 'restaurant.name' | translate }}:</label>
+    <input id="name" type="text" formControlName="name" />
+    <div
+      *ngIf="
+        restaurantForm.get('name')?.invalid &&
+        restaurantForm.get('name')?.touched
+      "
+    >
+      {{ 'restaurant.form_name_empty' | translate }}
+    </div>
+  </div>
+
+  <div>
+    <label for="cuisine">{{ 'restaurant.cuisine' | translate }}:</label>
+    <input id="cuisine" type="text" formControlName="cuisine" />
+    <div
+      *ngIf="
+        restaurantForm.get('cuisine')?.invalid &&
+        restaurantForm.get('cuisine')?.touched
+      "
+    >
+      {{ 'restaurant.form_cuisine_empty' | translate }}
+    </div>
+  </div>
+
+  <div formArrayName="reviews">
+    <label>{{ 'restaurant.reviews' | translate }}:</label>
+    <button type="button" (click)="addReview()">
+      {{ 'restaurant.reviews_add' | translate }}
+    </button>
+    <div *ngFor="let review of reviews.controls; let i = index">
+      <input type="text" [formControlName]="i" />
+    </div>
+  </div>
+
+  <button type="submit">{{ 'restaurant.add' | translate }}</button>
+</form>
+
+<div>
+  <h3>{{ 'restaurant.form_values' | translate }}:</h3>
+  <pre>{{ restaurantForm.value | json }}</pre>
+</div>
+
+<div *ngIf="restaurantForm.invalid && restaurantForm.touched">
+  {{ 'restaurant.form_fill_all_fields' | translate }}
+</div>

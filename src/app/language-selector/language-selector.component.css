@@ -1,0 +1,24 @@
+.language-selector {
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.language-selector select {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Стилі для опцій */
+.language-selector option {
+  padding: 5px;
+}
+
+/* Стилі для активного вибору */
+.language-selector select:focus {
+  outline: none;
+  border-color: #007bff;
+}

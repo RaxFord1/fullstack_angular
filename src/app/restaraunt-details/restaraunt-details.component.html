@@ -1,0 +1,19 @@
+<div class="restaurant-details" *ngIf="restaurant" @fadeInOut>
+  <h2>{{ restaurant.name }} - Деталі</h2>
+  <p>Кухня: {{ restaurant.cuisine }}</p>
+  <!-- Відображення відгуків -->
+
+  <div *ngIf="restaurant.reviews && restaurant.reviews.length > 0">
+    <h3>Відгуки</h3>
+    <ul>
+      <li *ngFor="let review of restaurant.reviews">
+        <restaurant-review review="{{ review }}"></restaurant-review>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Повідомлення, якщо відгуків немає -->
+  <div *ngIf="restaurant.reviews && restaurant.reviews.length === 0">
+    <p>Наразі відгуків немає.</p>
+  </div>
+</div>

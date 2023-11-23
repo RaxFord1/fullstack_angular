@@ -1,0 +1,12 @@
+{
+  "WELCOME": "Welcome to our hub! Here are presented best restaurants!",
+  "restaurant.name": "Name",
+  "restaurant.cuisine": "Cuisine",
+  "restaurant.reviews": "Reviews",
+  "restaurant.reviews_add": "Add review",
+  "restaurant.add": "Add restaurant",
+  "restaurant.form_fill_all_fields": "Please, fill in all fields.",
+  "restaurant.form_name_empty": "Name must not me empty!",
+  "restaurant.form_cuisine_empty": "Cuisine must not me empty!",
+  "restaurant.form_values": "Form values"
+}

@@ -1,0 +1,21 @@
+.restaurant-details {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.restaurant-details h2 {
+  margin-top: 0;
+}
+
+.restaurant-details p {
+  margin-bottom: 10px;
+}
+
+.restaurant-details li {
+  background-color: #f9f9f9;
+  border: 1px solid #eaeaea;
+  padding: 10px;
+  margin-bottom: 5px;
+}
