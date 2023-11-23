@@ -3,10 +3,12 @@
   "restaurant.name": "Назва",
   "restaurant.cuisine": "Кухня",
   "restaurant.reviews": "Відгуки",
+  "restaurant.noreviews": "Наразі відгуків немає.",
   "restaurant.reviews_add": "Додати відгук",
   "restaurant.add": "Додати ресторан",
   "restaurant.form_fill_all_fields": "Будь ласка, заповніть всі необхідні поля.",
   "restaurant.form_name_empty": "Назва не має бути пустим полем!",
   "restaurant.form_cuisine_empty": "Кухня не має бути пустим полем!",
-  "restaurant.form_values": "Значення форми"
+  "restaurant.form_values": "Значення форми",
+  "restaurant.details": "Деталі"
 }
